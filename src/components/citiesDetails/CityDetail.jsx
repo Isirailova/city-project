@@ -46,11 +46,17 @@ const CityDetail = () => {
         <div className="bishkek">
           <button
             onClick={onBishkekClick}
-            style={{ fontFamily: " URW Chancery L, cursive", fontSize: "20px" }}
+            style={{
+              fontFamily: " URWvb vhbVzxzASZC L, cursive",
+              fontSize: "20px",
+            }}
           >
             Bishkek
           </button>
-          <img src="https://mediaim.expedia.com/destination/1/f291dad6b0188714aaf7570ab511a527.jpg"></img>
+          <img
+            src="https://mediaim.expedia.com/destination/1/f291dad6b0188714aaf7570ab511a527.jpg"
+            alt="Bishkek Image"
+          ></img>
           {isBishkekOpen ? (
             <Popup
               info={BishkekInfo}
@@ -68,7 +74,11 @@ const CityDetail = () => {
           >
             Paris
           </button>
-          <img src="https://res.klook.com/image/upload/Mobile/City/swox6wjsl5ndvkv5jvum.jpg"></img>
+          <img
+            src="https://res.klook.com/image/upload/Mobile/City/swox6wjsl5ndvkv5jvum.jpg"
+            style={{ height: "233px" }}
+            alt="Paris Image"
+          ></img>
           {isParisOpen ? (
             <Popup
               info={ParisInfo}
@@ -88,7 +98,10 @@ const CityDetail = () => {
           >
             Rome
           </button>
-          <img src="https://www.fodors.com/wp-content/uploads/2018/10/HERO_UltimateRome_Hero_shutterstock789412159.jpg"></img>
+          <img
+            src="https://www.fodors.com/wp-content/uploads/2018/10/HERO_UltimateRome_Hero_shutterstock789412159.jpg"
+            alt="Rome Image"
+          ></img>
           {isRomeOpen ? (
             <Popup
               info={RomeInfo}
@@ -106,7 +119,11 @@ const CityDetail = () => {
           >
             Istanbul
           </button>
-          <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0e/95/db/9e.jpg"></img>
+          <img
+            src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0e/95/db/9e.jpg"
+            style={{ height: "228px" }}
+            alt="Istanbul Image"
+          ></img>
           {isIstanbulOpen ? (
             <Popup
               info={IstanbulInfo}

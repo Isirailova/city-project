@@ -27,43 +27,68 @@
 }
 #close-popup {
   position: absolute;
-  top: -20px;
-  right: -18px;
+  top: 105px;
+  right: 30px;
   width: 40px;
   font-size: 32px;
 }
 .image-group {
   display: flex;
-  align-items: flex-start;
 }
-.image-group p {
+.info p,
+.info h2 {
   margin-left: 20px;
   font-family: URW Chancery L, cursive;
 }
-.second {
+h2 {
+  text-align: center;
+  padding: 10px;
+}
+.left {
   display: flex;
-  justify-content: space-around;
-  padding: 30px;
+  flex-direction: column;
+  padding: 20px;
+  width: 400px;
+  gap: 40px;
 }
-.first-image img {
-  width: 200px;
+.info {
+  float: right;
+  width: 50%;
+  padding: 20px;
 }
-.bounce-image {
-  animation: bounceAnimation 2s ease-in-out infinite;
-
-  @keyframes bounceAnimation {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-20px);
-    }
-    60% {
-      transform: translateY(-10px);
-    }
+.first-image {
+  width: 45%;
+  height: 200px;
+}
+.imgrUrl2 {
+  height: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.welcome-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-popup h2 {
+  font-family: Snell Roundhand, cursive;
+  font-size: 100px;
+}
+.close-button {
+  width: 80px;
+}
+.flutter-animation {
+  animation: flutter 1s infinite;
+}
+@keyframes flutter {
+  0% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-2deg);
   }
 }
